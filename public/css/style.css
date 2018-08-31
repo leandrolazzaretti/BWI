@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'DINNextLTPro-Regular';
+    src: url('../fonts/DINNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Regular.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Regular.woff') format('woff'), url('../fonts/DINNextLTPro-Regular.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Regular.svg#DINNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'DINNextLTPro-Light';
+    src: url('../fonts/DINNextLTPro-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Light.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Light.woff') format('woff'), url('../fonts/DINNextLTPro-Light.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Light.svg#DINNextLTPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'DINNextLTPro-Bold';
+    src: url('../fonts/DINNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Bold.otf')  format('opentype'),
+           url('../fonts/DINNextLTPro-Bold.woff') format('woff'), url('../fonts/DINNextLTPro-Bold.ttf')  format('truetype'), url('../fonts/DINNextLTPro-Bold.svg#DINNextLTPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* *********************************** layout ********************************* */
+
+html, body{/*editando multiplas classes ao mesmo tempo*/
+    height: 100%;
+}
+
+body {
+    font-family: DINNextLTPro-Light;
+    overflow-x: hidden;/*remove a barra de rolagem da posição X direto no BODY, pois dentro dele está todo o nosso Front-End*/
+}
+
+.parallax {
+    min-height: 100%;
+}
+
+.parallax_banner{
+    height: 80vh;
+}
+/* ********************************* Barra de navegação ******************************** */
+
+nav.navbar-transparente {
+    height: 120px;
+    padding: 15px 0px;
+    background: rgba(0,0,0, 0.5);
+    border: none;
+}
+
+.navbar-brand {
+    margin-top: 1%; 
+}
+
+.img-logo{
+    color: transparent;
+    float: left;
+}
+
+#barra-navegacao{
+    width: 100%;
+    margin-top: 1.5%;
+    margin-right: -10%
+}
+
+#barra-navegacao a{
+    color: white;
+}
+
+#barra-navegacao a:hover{
+    color: #46ab7e;
+}
+
+/* ******************************** INDEX_SECTION_1 ******************************** */
+
+#index_section1{
+    width: 100%;
+    float: left;
+}
+
+.image_section1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.text_section1{
+    position: absolute;
+    width: 100%;
+    float: left;
+    color: #fff;
+    top: 40%;
+    padding-left: 20%;
+}
+
+.text_section1 h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.text_section1 h3{
+    margin: -10px 0 15px 0;
+}
+
+.text_section1 h4{
+    margin: 2;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+}
+
+.text_section1_rotate{
+    position: absolute;
+    width: 100%;
+    float: left;
+    color: #fff;
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    padding-left: 15%;
+    left: -38%;
+}
+
+.text_section1_center{
+    margin: 0 0;
+}
+
+.text_section1_rotate h4{
+    letter-spacing: 0.2em;
+    font-size: 8px;
+
+}
+
+.carousel-indicators li {
+    width: 40px;
+    height: 5px;
+    border-radius: 0px;
+    background: #fff;
+    opacity: 0.2;
+}
+.carousel-indicators .active {
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    opacity: 1;
+    margin: 1;
+}
+
+/* ******************************** INDEX_SECTION_2 ******************************** */
+
+#index_section2{
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#index_section2 p{
+    padding: 20px 20px 0 40px;
+    font-family: DINNextLTPro-Regular;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+}
+
+#index_section2 button{
+    border: none;
+    margin-left: 40px;
+    padding: 4px 8px 2px 8px;
+    color: #fff;
+    font-family: DINNextLTPro-Regular;
+    font-weight: bold;
+    background: #46ab7e;
+    float: left;
+}
+
+.image_section2{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    float: left;
+}
+
+.image_1_section2 {
+    background: url(../images/who_we_are_index.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.image_2_section2 {
+    background: url(../images/background_index.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.image_3_section2 {
+    background: url(../images/our_values_index.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text_section2{
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    padding-left: 35px;
+}
+
+.text_section2 img{
+    float: left;
+    padding-top: 2px;
+    padding-right: 3px;
+    width: 16px;
+}
+
+.text_section2 h3{
+    margin: 0;
+    font-family: DINNextLTPro-Bold;
+    font-size: 33px;
+    color: #fff;
+    float: left;
+}
+
+/* ******************************** BACKGROUND_SECTION_1 / WHO_WE_ARE_SECTION_1 / CONTACT_SECTION1 / OUR_VALUES_SECTION2 ******************************** */
+
+#background_section1, #who_we_are_section1, #contact_section1 , #our_values_section1{
+    width: 100%;
+    float: left;
+}
+
+/* ******************************** BACKGROUND_SECTION_2 / WHO_WE_ARE_SECTION_2 / CONTACT_SECTION2 / OUR_VALUES_SECTION2 ******************************** */
+
+#background_section2, #who_we_are_section2, #contact_section2, #our_values_section2{
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+#background_section2 h1, #background_section2 h3,  #who_we_are_section2 h1,  #who_we_are_section2 h3, #contact_section2 h1, #contact_section2 h3, #our_values_section2 h1, #our_values_section2 h3{
+    font-family: DINNextLTPro-Bold;
+    color: #000;
+    width: 100%;
+    float: left;
+}
+
+#background_section2 p, #who_we_are_section2 p, #our_values_section2 p{
+    font-family: DINNextLTPro-Regular;
+    color: #646464;
+    width: 100%;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+/* ******************************** WHO_WE_ARE_SECTION_2  / OUR_VALUES_SECTION2 ******************************** */
+
+#who_we_are_section2 span{
+    width: 100%;
+    float: left;
+    margin: 50px 0 20px 0;
+}
+
+.who_we_are_text_section2_rotate, .our_values_section2_rotate{
+    position: absolute;
+    width: 100%;
+    float: left;
+    
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 28%;
+    left: -43%;
+}
+
+.who_we_are_text_section2_rotate h4, .our_values_section2_rotate h4{
+    font-size: 8px;
+    letter-spacing: 0.8;
+    font-family: DINNextLTPro-Light;
+}
+
+/* ******************************** CONTACT_SECTION_2 ******************************** */
+
+.contact_section2_rotate{
+    position: absolute;
+    width: 100%;
+    float: left;
+    
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 28%;
+    left: 35%;
+}
+
+.contact_section2_rotate h4{
+    font-size: 8px;
+    letter-spacing: 0.8;
+    font-family: DINNextLTPro-Light;
+}
+
+#contact_section2 h3{
+    margin-bottom: 20px;
+}
+
+#contact_section2 p{
+    width: 100%;
+    float: left;
+    font-family: DINNextLTPro-Regular;
+    color: #646464;
+    margin: 0;
+}
+
+
+/* ******************************** RODAPÉ ******************************** */
+
+footer{
+    width: 100%;
+    float: left;
+    background: #000;
+    padding: 80px 0px 80px 0px;
+    position: relative;
+    z-index: 3;
+}
+
+#rodape h4{
+    /*font-family: Noto Sans, sans-serif;*/
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+#rodape .col-md-2 a:hover{
+    text-decoration: none;
+    
+} 
+
+#rodape a{
+    /*font-family: Noto Sans, sans-serif;*/
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 8px;
+}
+
+#rodape .nav a{
+    color: rgb(182, 181, 181);
+}
+
+#rodape .nav a:hover{
+    color: #46ab7e;
+    background: none;
+}
+
+#rodape p{
+    /*font-family: Noto Sans, sans-serif;*/
+    letter-spacing: 0.05em;
+    color: rgb(182, 181, 181);
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%; 
+    float: left;
+}
+
+#rodape .col-md-4 img{
+    padding-right: 8px;
+    float: left;
+}
+
