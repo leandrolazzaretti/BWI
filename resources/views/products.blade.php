@@ -1,5 +1,34 @@
 @extends('includes.base')
 
+@section('scripts')
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            /* ao clicar na div com id="box" executa a função */
+            $(".products_div_buttom").click(function(){
+
+                $(".products_div_buttom").css("background","black").attr('value', 'false');
+
+                /* a função muda o background da div selecionada */	
+                if ($(this).attr('value') == 'true') {
+
+                    $(this).css("background","black").attr('value', 'false');
+                    
+                }else{
+
+                    $(this).css("background","#46ab7e").attr('value', 'true');
+                    
+                }
+            });
+        });
+
+    </script>
+
+@endsection
+
 @section('conteudo')
 
 @if(Session::has('mensagem'))
@@ -26,67 +55,187 @@
 
 <section id="products_section2">
 
-    <div>
-        <div class="products_section2_rotate">
-            <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
-        </div>
+    <div class="products_section2_rotate">
+        <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
+    </div>
 
-        <div class="container">
-            
-            <div class="row" style="margin-bottom: 40px;">
+    <div class="container">
 
-            <div class="col-md-2"></div>
-            
-            <div class="col-md-2">
-
-                <h1>CONTACT</h1>
-
-            </div>
-
+        <div class="row">
             <div class="col-md-1"></div>
 
             <div class="col-md-3">
-
-                <h3>Eduardo Puertas</h3>
-                <p>+ 55 (11) 9924 00759</p>
-                <p>+ 55 (11) 98635 9375</p>
-                <p>eduardo.puertas@bwitrading.com</p>
-                
-                <h3>Gustavo Mariano</h3>
-                <p><+ 55 (11) 9914 61367</p>
-                <p>+ 55 (11) 98746 9977</p>
-                <p>gustavo.mariano@bwitrading.com</p>
-
-                <h3>João Bosco Gasparini</h3><br>
-                <p>+ 55 (41) 98807-4606</p>
-                <p>bosco.gasparini@bwitrading.com</p>
-
-                <p style="font-family: DINNextLTPro-Bold; color: #000; margin-top: 20px">+55 11 4171.4794</p>
+                <div class="products_div">
+                    <h1>PRODUCTS</h1>
+                </div>
             </div>
+        </div><!--/row-->
 
-            </div><!--/row-->
+        <div class="row"> 
+            <div class="col-md-1"></div>
 
-            <div class="row">
+            <div class="col-md-3"> 
+                    <!-- Nav tabs -->
 
-                <div class="col-md-2"></div>
+                    <ul class="nav nav-tabs" role="tablist">
+                       
+                    
+                        <a href="#products1" aria-controls="products1" role="tab" data-toggle="tab">
+                            <div class="products_div_buttom" role="presentation">
+                                <h3>FUELS AND DERIVATES</h3>
+                            </div>
+                        </a>
+                   
 
-                <div class="col-md-2">
-                    <h1 style="margin-top: 0;">ADRESS</h1>
-                </div>
+                       <a href="#products2" aria-controls="products2" role="tab" data-toggle="tab">
+                            <div class="products_div_buttom" role="presentation">
+                                <h3>GLYCERIN</h3>
+                            </div>
+                        </a>
 
-                <div class="col-md-1"></div>
+                       <a href="#products3" aria-controls="products3" role="tab" data-toggle="tab">
+                            <div class="products_div_buttom" role="presentation">
+                                <h3>BIOFUELS</h3>
+                            </div>
+                        </a>
 
-                <div class="col-md-3">
-                    <p>183 PROF. ARTUR RAMOS STREET</p>
-                    <p>01454-011 SÃO PAULO, SP</p>
-                    <p>BRAZIL</p>
+                        <a href="#products4" aria-controls="products4" role="tab" data-toggle="tab">
+                            <div class="products_div_buttom" role="presentation">
+                                <h3>CHEMICAL</h3>
+                            </div>
+                        </a>
 
-                </div>
+                       <a href="#products5" aria-controls="products5" role="tab" data-toggle="tab">
+                            <div class="products_div_buttom" role="presentation">
+                                <h3>AGRICULTURAL</h3>
+                            </div>
+                       </a>
 
+                    </ul>
             </div>
             
-        </div><!--/container-->
+            <div class="col-md-7">
+                    <!-- Tab panes -->
+                    
+                    <div class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade in active div_image_products" id="products1">
+                            <img src="{{asset('images/glycerin_products.jpg')}}" class="image_products">
+
+                            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5>FUELS AND DERIVATES</h5>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade div_image_products" id="products2">
+                            <img src="{{asset('images/glycerin_products_teste1.jpg')}}" class="image_products">
+
+                            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5>GLYCERIN</h5>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade div_image_products" id="products3">
+                            <img src="{{asset('images/glycerin_products_teste2.jpg')}}" class="image_products">
+
+                            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5>BIOFUELS</h5>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade div_image_products" id="products4">
+                            <img src="{{asset('images/glycerin_products_teste3.jpg')}}" class="image_products">
         
-    </div>
+                            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5>CHEMICAL</h5>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade div_image_products" id="products5">
+                            <img src="{{asset('images/glycerin_products_teste4.jpg')}}" class="image_products">
+
+                            <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5>AGRICULTURAL</h5>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div><!--/row-->
+    </div><!--/container-->
 
 </section><!--/products_section2-->
+
+@endsection

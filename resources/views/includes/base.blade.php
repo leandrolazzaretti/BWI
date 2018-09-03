@@ -46,7 +46,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{route('who_we_are')}}">WHO WE ARE</a></li>
                         <li><a href="{{route('background')}}">BACKGROUND</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="{{route('products')}}">PRODUCTS</a></li>
                         <li><a href="{{route('our_values')}}">OUR VALUES</a></li>
                         <li><a href="{{route('contact')}}">CONTACT</a></li>
                     </ul>
@@ -78,7 +78,7 @@
 
                         <div class="col-md-2">
                            <a href="{{route('background')}}"><h4>BACKGROUND</h4></a>
-                           <a href="#"><h4>PRODUCTS</h4></a>
+                           <a href="{{route('products')}}"><h4>PRODUCTS</h4></a>
                             <ul class="nav">
                                 <li><a href="#">Fuels and Oil Derivate</a></li>
                                 <li><a href="#">Biofuels</a></li>
@@ -136,6 +136,8 @@
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <!--paralax-->
         <script src="{{asset('js/parallax.min.js')}}"></script>
+
+         @yield('scripts')
     </body>
 
 </html>

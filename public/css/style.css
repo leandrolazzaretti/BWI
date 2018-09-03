@@ -233,16 +233,16 @@ nav.navbar-transparente {
     float: left;
 }
 
-/* ******************************** BACKGROUND_SECTION_1 / WHO_WE_ARE_SECTION_1 / CONTACT_SECTION1 / OUR_VALUES_SECTION2 ******************************** */
+/* ********** BACKGROUND_SECTION_1 / WHO_WE_ARE_SECTION_1 / CONTACT_SECTION1 / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_1 ********** */
 
-#background_section1, #who_we_are_section1, #contact_section1 , #our_values_section1{
+#background_section1, #who_we_are_section1, #contact_section1 , #our_values_section1, #products_section1{
     width: 100%;
     float: left;
 }
 
-/* ******************************** BACKGROUND_SECTION_2 / WHO_WE_ARE_SECTION_2 / CONTACT_SECTION2 / OUR_VALUES_SECTION2 ******************************** */
+/* ********** BACKGROUND_SECTION_2 / WHO_WE_ARE_SECTION_2 / CONTACT_SECTION2 / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_2 *********** */
 
-#background_section2, #who_we_are_section2, #contact_section2, #our_values_section2{
+#background_section2, #who_we_are_section2, #contact_section2, #our_values_section2, #products_section2{
     width: 100%;
     float: left;
     padding-top: 50px;
@@ -251,14 +251,14 @@ nav.navbar-transparente {
 
 
 
-#background_section2 h1, #background_section2 h3,  #who_we_are_section2 h1,  #who_we_are_section2 h3, #contact_section2 h1, #contact_section2 h3, #our_values_section2 h1, #our_values_section2 h3{
+#background_section2 h1, #background_section2 h3,  #who_we_are_section2 h1,  #who_we_are_section2 h3, #contact_section2 h1, #contact_section2 h3, #our_values_section2 h1, #our_values_section2 h3, #products_section2 h1{
     font-family: DINNextLTPro-Bold;
     color: #000;
     width: 100%;
     float: left;
 }
 
-#background_section2 p, #who_we_are_section2 p, #our_values_section2 p{
+#background_section2 p, #who_we_are_section2 p, #our_values_section2 p, #products_section2 p{
     font-family: DINNextLTPro-Regular;
     color: #646464;
     width: 100%;
@@ -266,7 +266,7 @@ nav.navbar-transparente {
     margin: 10px 0 10px 0;
 }
 
-/* ******************************** WHO_WE_ARE_SECTION_2  / OUR_VALUES_SECTION2 ******************************** */
+/* ******************************** WHO_WE_ARE_SECTION_2  / OUR_VALUES_SECTION2 / PRODUCTS_SECTION_2 ******************************** */
 
 #who_we_are_section2 span{
     width: 100%;
@@ -274,7 +274,7 @@ nav.navbar-transparente {
     margin: 50px 0 20px 0;
 }
 
-.who_we_are_text_section2_rotate, .our_values_section2_rotate{
+.who_we_are_text_section2_rotate, .our_values_section2_rotate, .products_section2_rotate{
     position: absolute;
     width: 100%;
     float: left;
@@ -287,7 +287,7 @@ nav.navbar-transparente {
     left: -43%;
 }
 
-.who_we_are_text_section2_rotate h4, .our_values_section2_rotate h4{
+.who_we_are_text_section2_rotate h4, .our_values_section2_rotate h4, .products_section2_rotate h4{
     font-size: 8px;
     letter-spacing: 0.8;
     font-family: DINNextLTPro-Light;
@@ -325,6 +325,72 @@ nav.navbar-transparente {
     color: #646464;
     margin: 0;
 }
+
+
+/* ******************************** PRODUCTS_SECTION_2 ******************************** */
+
+.products_div{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    margin-bottom: 2px;
+}
+
+.products_div_buttom{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #000;
+    margin-bottom: 2px;
+}
+
+.image_products{
+    width: 100%;
+    float: left;
+    height: 308px;
+}
+
+.image_products_img{
+    width: 100%;
+    height: 100%;
+}
+
+#products_section2 h3{
+    position: absolute;
+    font-family: DINNextLTPro-Bold;
+    font-size: 23px;
+    padding-left: 20px;
+    color: #fff;
+    width: 100%;
+    float: left;
+}
+
+#products_section2 h1{
+    position: absolute;
+    font-family: DINNextLTPro-Bold;
+    color: #000;
+    width: 100%;
+    float: left;
+}
+
+#products_section2 .col-md-3{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#products_section2 .col-md-7{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#products_section2 h5{
+    font-family: DINNextLTPro-Bold;
+    font-size: 23px;
+    color: #000;
+    width: 100%;
+}
+
 
 
 /* ******************************** RODAPÉ ******************************** */
