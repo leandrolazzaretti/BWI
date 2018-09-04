@@ -136,7 +136,7 @@
                     its roots deep in Brazil, while stringly
                     connected to global markets
                 </p> 
-                <button>/ VIEW SECTION</button>
+                <span class="button_span"><button>/ VIEW SECTION</button></span>
             </div>
             
             <div class="col-md-4">
@@ -155,7 +155,7 @@
                     the 50 million m³ per year level and for 
                     gasoline floating around 30 million m³
                 </p>
-                <button>/ VIEW SECTION</button>
+                <span class="button_span"><button>/ VIEW SECTION</button></span>
             </div>
             
             <div class="col-md-4">
@@ -174,7 +174,7 @@
                     all activities of our business, always
                     focused in bringing true value...
                 </p>
-                <button>/ VIEW SECTION</button>
+                <span class="button_span"><button>/ VIEW SECTION</button></span>
             </div>
 
         </div>

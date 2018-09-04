@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
         <!-- Css -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <!--boostnav.css/animate.css-->
+        <link rel="stylesheet" href="{{asset('css/bootsnav.css')}}">
+        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
+
 
          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,13 +22,14 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
 
     <body>
 
 <!-- *************************** HEADER *************************** -->
 
-        <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente ">
+        <nav class="navbar navbar-default navbar-fixed dark no-background bootsnav">
             <div class="container">
 
                 <div class="navbar-header">
@@ -38,17 +43,19 @@
                     </button><!--/button-->
                 </div>
 
-                <a href="{{route('index')}}" class="navbar-brand">
-                    <img src="{{asset('images/logo.png')}}" class="img-logo">
-                </a>
+                <div class="menu_logo">
+                    <a href="{{route('index')}}" class="navbar-brand">
+                        <img src="{{asset('images/logo.png')}}" class="img-logo">
+                    </a>
+                </div>
 
                 <div class="collapse navbar-collapse" id="barra-navegacao">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{route('who_we_are')}}">WHO WE ARE</a></li>
-                        <li><a href="{{route('background')}}">BACKGROUND</a></li>
-                        <li><a href="{{route('products')}}">PRODUCTS</a></li>
-                        <li><a href="{{route('our_values')}}">OUR VALUES</a></li>
-                        <li><a href="{{route('contact')}}">CONTACT</a></li>
+                        <li><span class="menu_itens_span"><a href="{{route('who_we_are')}}">WHO WE ARE</a></span></li>
+                        <li><span class="menu_itens_span"><a href="{{route('background')}}">BACKGROUND</a></span></li>
+                        <li><span class="menu_itens_span"><a href="{{route('products')}}">PRODUCTS</a></span></li>
+                        <li><span class="menu_itens_span"><a href="{{route('our_values')}}">OUR VALUES</a></span></li>
+                        <li><span class="menu_itens_span"><a href="{{route('contact')}}">CONTACT</a></span></li>
                     </ul>
                 </div>
 
@@ -134,10 +141,28 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <!--bootsnav-->
+        <script src="{{asset('js/bootsnav.js')}}"></script>
         <!--paralax-->
         <script src="{{asset('js/parallax.min.js')}}"></script>
 
          @yield('scripts')
+
+        <script type="text/javascript">
+
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 35) {
+                    $('.menu_itens_span a').addClass('menu_item_preto');
+                    $('.menu_logo').addClass('menu_logo_alterado');
+                } else {
+                    $('.menu_itens_span a').removeClass('menu_item_preto');
+                    $('.menu_logo').removeClass('menu_logo_alterado');
+                }
+            });
+        });
+
+</script>
     </body>
 
 </html>
