@@ -27,7 +27,7 @@
 <section id="who_we_are_section2">
 
     <div>
-        <div class="who_we_are_text_section2_rotate">
+        <div class="who_we_are_text_section2_rotate hidden-xs hidden-sm">
             <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
         </div>
 

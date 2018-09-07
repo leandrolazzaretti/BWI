@@ -7,7 +7,7 @@
 
         $(document).ready(function(){
 
-            /* ao clicar na div com id="box" executa a função */
+            /* ao clicar na div com a classe="products_div_buttom" executa a função */
             $(".products_div_buttom").click(function(){
 
                 $(".products_div_buttom").css("background","black").attr('value', 'false');
@@ -46,7 +46,7 @@
     <div class="parallax_banner">
 
         <div class="parallax" data-parallax="scroll" data-z-index="1"   
-        data-image-src="../images/banner_products.jpg">
+        data-image-src="../images/banner_products.jpg" style="margin-top: -40px">
         </div><!-- /parallax -->
 
     </div>
@@ -55,7 +55,7 @@
 
 <section id="products_section2">
 
-    <div class="products_section2_rotate">
+    <div class="products_section2_rotate hidden-xs hidden-sm">
         <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
     </div>
 
@@ -81,7 +81,7 @@
                        
                     
                         <a href="#products1" aria-controls="products1" role="tab" data-toggle="tab">
-                            <div class="products_div_buttom" role="presentation">
+                            <div style="background: #46ab7e" class="products_div_buttom" role="presentation">
                                 <h3>FUELS AND DERIVATES</h3>
                             </div>
                         </a>
@@ -119,8 +119,9 @@
                     
                     <div class="tab-content">
 
-                        <div role="tabpanel" class="tab-pane fade in active div_image_products" id="products1">
-                            <img src="{{asset('images/glycerin_products.jpg')}}" class="image_products">
+                        <div role="tabpanel" class="tab-pane fade in active div_image_products" id="products1" >
+                        
+                            <div class="image_products" style="background: url(../images/glycerin_products.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" ></div>
 
                             <div id="accordion1" role="tablist" aria-multiselectable="true">
                                 <div class="panel-heading" role="tab" id="headingOne1">
@@ -142,7 +143,8 @@
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade div_image_products" id="products2">
-                            <img src="{{asset('images/glycerin_products_teste1.jpg')}}" class="image_products">
+
+                            <div class="image_products" style="background: url(../images/glycerin_products_teste1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" ></div>
 
                             <div id="accordion2" role="tablist" aria-multiselectable="true">
                                 <div class="panel-heading" role="tab" id="headingOne2">
@@ -168,7 +170,8 @@
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade div_image_products" id="products3">
-                            <img src="{{asset('images/glycerin_products_teste2.jpg')}}" class="image_products">
+                            
+                            <div class="image_products" style="background: url(../images/glycerin_products_teste2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" ></div>
 
                             <div id="accordion3" role="tablist" aria-multiselectable="true">
                                 <div class="panel-heading" role="tab" id="headingOne3">
@@ -190,7 +193,8 @@
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade div_image_products" id="products4">
-                            <img src="{{asset('images/glycerin_products_teste3.jpg')}}" class="image_products">
+                        
+                            <div class="image_products" style="background: url(../images/glycerin_products_teste3.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" ></div>
         
                             <div id="accordion4" role="tablist" aria-multiselectable="true">
                                 <div class="panel-heading" role="tab" id="headingOne4">
@@ -212,7 +216,8 @@
                         </div>
 
                         <div role="tabpanel" class="tab-pane fade div_image_products" id="products5">
-                            <img src="{{asset('images/glycerin_products_teste4.jpg')}}" class="image_products">
+                           
+                            <div class="image_products" style="background: url(../images/glycerin_products_teste4.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;" ></div>
 
                             <div id="accordion5" role="tablist" aria-multiselectable="true">
                                 <div class="panel-heading" role="tab" id="headingOne5">

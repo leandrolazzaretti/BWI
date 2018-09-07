@@ -27,7 +27,7 @@
 <section id="our_values_section2">
 
     <div>
-        <div class="our_values_section2_rotate">
+        <div class="our_values_section2_rotate hidden-xs hidden-sm">
             <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
         </div>
 

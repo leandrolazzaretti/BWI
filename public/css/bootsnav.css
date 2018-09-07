@@ -998,7 +998,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav .navbar-header {
-        float: none;
         display: block;
         text-align: center;
         padding-left: 30px;

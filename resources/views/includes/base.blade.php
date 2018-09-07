@@ -51,11 +51,11 @@
 
                 <div class="collapse navbar-collapse" id="barra-navegacao">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><span class="menu_itens_span"><a href="{{route('who_we_are')}}">WHO WE ARE</a></span></li>
-                        <li><span class="menu_itens_span"><a href="{{route('background')}}">BACKGROUND</a></span></li>
-                        <li><span class="menu_itens_span"><a href="{{route('products')}}">PRODUCTS</a></span></li>
-                        <li><span class="menu_itens_span"><a href="{{route('our_values')}}">OUR VALUES</a></span></li>
-                        <li><span class="menu_itens_span"><a href="{{route('contact')}}">CONTACT</a></span></li>
+                        <li><a href="{{route('who_we_are')}}"><span class="menu_itens_span">WHO WE ARE</span></a></li>
+                        <li><a href="{{route('background')}}"><span class="menu_itens_span">BACKGROUND</span></a></li>
+                        <li><a href="{{route('products')}}"><span class="menu_itens_span">PRODUCTS</span></a></li>
+                        <li><a href="{{route('our_values')}}"><span class="menu_itens_span">OUR VALUES</span></a></li>
+                        <li><a href="{{route('contact')}}"><span class="menu_itens_span">CONTACT</span></a></li>
                     </ul>
                 </div>
 
@@ -63,13 +63,9 @@
         </nav><!--/nav-->
 
  <!-- *************************** CAPA *************************** -->
-
         <br/><br/>
 
         @yield('conteudo')
-
-
-
 <!-- *************************** RODAPÉ *************************** -->
 
                 <footer id="rodape">
@@ -111,15 +107,19 @@
                         <div class="col-md-4" style="padding-top:7px">
 
                             <div class="row">
-                                <div class="col-md-6" style="padding-left: 0px;">
+                                <div class="col-md-6" style="padding-left: 10px;">
                                     <p style="margin-bottom: 0px">Connect with us</p>
-                                    <a href="#"><img src="{{asset('images/icon1.png')}}" class="img-responsive"></a>
-                                    <a href="#"><img src="{{asset('images/icon2.png')}}" class="img-responsive"></a>
-                                    <a href="#"><img src="{{asset('images/icon3.png')}}" class="img-responsive"></a>
-                                    <a href="#"><img src="{{asset('images/icon4.png')}}" class="img-responsive"></a>
+
+                                    <div class="icons_rodape">
+                                        <a href="#"><img src="{{asset('images/icon1.png')}}" class="img-responsive"></a>
+                                        <a href="#"><img src="{{asset('images/icon2.png')}}" class="img-responsive"></a>
+                                        <a href="#"><img src="{{asset('images/icon3.png')}}" class="img-responsive"></a>
+                                        <a href="#"><img src="{{asset('images/icon4.png')}}" class="img-responsive"></a>
+                                    </div>
+
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 logo_rodape_centralizado">
                                     <img src="{{asset('images/logo_rodape.png')}}">
                                 </div>
                             </div><!--/row-->
@@ -153,14 +153,30 @@
         $(function() {
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 35) {
-                    $('.menu_itens_span a').addClass('menu_item_preto');
+                    $('#barra-navegacao a').addClass('menu_item_preto');
                     $('.menu_logo').addClass('menu_logo_alterado');
+                    $('.navbar-header').addClass('navbar_header_alterado');
                 } else {
-                    $('.menu_itens_span a').removeClass('menu_item_preto');
+                    $('#barra-navegacao a').removeClass('menu_item_preto');
                     $('.menu_logo').removeClass('menu_logo_alterado');
+                    $('nav').removeClass('nav_ready');
+                    $('.navbar-header').removeClass('navbar_header_alterado');
                 }
             });
+
+            $(document).ready(function(){
+                if($(window).scrollTop() > 35) {
+                    $('#barra-navegacao a').addClass('menu_item_preto');
+                    $('.menu_logo').addClass('menu_logo_alterado');
+                    $('nav').addClass('nav_ready');
+                    $('nav').removeClass('no-background');
+                    $('.navbar-header').addClass('navbar_header_alterado');
+                } 
+            });
+
         });
+
+
 
 </script>
     </body>

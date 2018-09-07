@@ -67,6 +67,7 @@ nav.navbar-transparente {
     -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
     -o-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
     -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
+    transition: 1s;
 }
 
 .menu_logo_alterado{
@@ -90,31 +91,21 @@ nav.navbar-transparente {
 
 #barra-navegacao{
     width: 100%;
-    margin-top: 1.5%;
-    margin-right: -10%
+    margin-top: 15px;
 }
 
 #barra-navegacao a{
     width: 100%;
     float: left;
     color: white;
-
+    margin-top: 40px;
+    padding: 5px 8px 0px 10px;
+    transition: 1s;
 }
 
 .menu_itens_span{
     width: 100%;
     float: left;
-    margin-top: 40px;
-    padding: 5px 8px 0px 10px;
-}
-
-#barra-navegacao li{
-    margin-right: 20px;
-}
-
-#barra-navegacao a:hover{
-    text-decoration: none;
-    color: #46ab7e;
     transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
     -webkit-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
     -moz-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
@@ -122,8 +113,8 @@ nav.navbar-transparente {
     -ms-transform: rotate(0deg) scale(1.003) skew(34deg) translate(0px);
 }
 
-.menu_itens_span:hover{
-    background: #fff;
+#barra-navegacao li{
+    padding-right: 30px;
     transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
     -webkit-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
     -moz-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
@@ -131,17 +122,38 @@ nav.navbar-transparente {
     -ms-transform: rotate(0deg) scale(1.003) skew(-34deg) translate(0px);
 }
 
-.menu_item_preto{
-    margin-top: -10px !important;
-    color: #000 !important;
-    transition: all 1s;
+#barra-navegacao a:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #46ab7e;
+    transition: 0.5s;
 }
+
+.menu_item_selecionado{
+    background: #fff;
+    color: #46ab7e;
+}
+
+.menu_item_preto{
+    margin-top: 30px !important;
+    color: #000 !important;
+}
+
 .menu_item_preto:hover{
     color: #46ab7e !important;
 }
 
 nav.navbar.bootsnav {
     transition: all 1s;
+}
+
+.nav_ready{
+    background: #fff !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+
+.carousel-indicators {
+    z-index: 9 !important;
 }
 
 /* ******************************** INDEX_SECTION_1 ******************************** */
@@ -249,18 +261,19 @@ nav.navbar.bootsnav {
     float: left;
 }
 
-#index_section2 button{
+#index_section2 a{
+    text-decoration: none;
     border: none;
     color: #fff;
     font-family: DINNextLTPro-Regular;
     background: #46ab7e;
     font-weight: bold;
     float: left;
-    transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
-    -webkit-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
-    -moz-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
-    -o-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
-    -ms-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
 }
 
 #index_section2 .button_span{
@@ -268,11 +281,17 @@ nav.navbar.bootsnav {
     padding: 4px 8px 2px 8px;
     background: #46ab7e;
     float: left;
-    transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
-    -webkit-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
-    -moz-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
-    -o-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
-    -ms-transform: rotate(0deg) scale(1.003) skew(-20deg) translate(0px);
+}
+
+#index_section2 .span_inclinado{
+    width: 100%;
+    float: left;
+    transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(20deg) translate(0px);
+    
 }
 
 .image_section2{
@@ -282,28 +301,8 @@ nav.navbar.bootsnav {
     float: left;
 }
 
-.image_1_section2 {
-    background: url(../images/who_we_are_index.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.image_2_section2 {
-    background: url(../images/background_index.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.image_3_section2 {
-    background: url(../images/our_values_index.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.image_section2:hover .text_section2{
+    bottom: 80px;
 }
 
 .text_section2{
@@ -311,6 +310,7 @@ nav.navbar.bootsnav {
     width: 100%;
     bottom: 25px;
     padding-left: 35px;
+    transition: 0.5s;
 }
 
 .text_section2 img{
@@ -342,6 +342,7 @@ nav.navbar.bootsnav {
     float: left;
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 
@@ -378,8 +379,9 @@ nav.navbar.bootsnav {
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
-    top: 34%;
+    top: 230px;
     left: -43%;
+    text-align: center;
 }
 
 .who_we_are_text_section2_rotate h4, .our_values_section2_rotate h4, .products_section2_rotate h4{
@@ -400,8 +402,9 @@ nav.navbar.bootsnav {
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
-    top: 34%;
+    top: 230px;
     left: 35%;
+    text-align: center;
 }
 
 .contact_section2_rotate h4{
@@ -532,6 +535,8 @@ footer{
 }
 
 #rodape h4{
+    width: 100%;
+    float: left;
     font-size: 18px;
     color: white;
     font-weight: bold;
@@ -574,3 +579,193 @@ footer{
     float: left;
 }
 
+#rodape .icons_rodape{
+    width: 100%;
+    float: left;
+}
+
+/* ********************* Media queries ******************** */
+
+@media screen and (min-width: 768px){
+    .navbar-right{
+        margin-right: -75px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #index_section1 .text_section1 h1{
+        font-size: 20px;
+    }
+
+    /************** products section 2 **************/
+
+    #products_section2 h5 {
+        font-size: 20px;
+    }
+
+    #products_section2 .products_div h1{
+        padding-left: 20px;
+    }
+    
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+    #index_section1 .text_section1 h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    nav.navbar.bootsnav.no-background{
+        background-color: transparent !important;
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    /************** rodapé **************/
+    #rodape .row{
+        text-align: center;
+    }
+
+    #rodape a{
+        padding: 10px 0 0 0;
+    }
+
+    #rodape br{
+        display: none;
+    }
+
+   #rodape .col-md-4{
+        margin-top: 40px;
+        padding-top: 50px !important;
+   }
+
+    #rodape .icons_rodape{
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    #rodape .logo_rodape_centralizado{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /************** barra de navegação **************/
+    .navbar-header{
+        float: right;
+        padding: 20px;
+        transition: 1s;
+    }
+
+    .navbar_header_alterado{
+        padding: 10px;
+    }
+
+    .navbar-brand{
+        padding: 10px 0px;
+    }
+
+    .menu_logo{
+        padding: 10px 0;
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .menu_logo a img{
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .img-logo{
+        max-width:121px;
+        max-height:45px;
+        width: auto;
+        height: auto;
+    }
+
+    nav .container{
+        padding-left: 0px;
+    }
+
+    #barra-navegacao a{
+        color: black;
+        border-bottom: none;
+        border-top: none
+    }
+
+    #barra-navegacao li{
+        padding-right: 0;
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    .container>.navbar-collapse{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .menu_itens_span{
+        transform: none;
+        -webkit-transform: none;
+    }
+
+    #barra-navegacao{
+        text-align: center;
+    }
+    #barra-navegacao ul li a{
+        margin-top: 0;
+        padding: 20px 0;
+    }
+
+    #barra-navegacao ul{
+        width: 100%;
+        overflow: hidden;
+        border-top: 1px solid  #e7e7e7;
+    }
+
+    .menu_item_preto{
+        margin-top: 0 !important;
+    }
+
+    .menu_logo_alterado{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    nav.navbar.bootsnav .navbar-nav{
+        margin: 0 !important
+    }
+
+    /************** index section - 2 **************/
+
+    #index_section2 .button_span{
+        margin-bottom: 50px;
+    }
+
+    #index_section2{
+        padding-bottom: 0px;
+    }
+
+    /************** contact section - 2 **************/
+    
+    #contact_section2 .container{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+
+
+     /************** index section - 2 **************/
+    #index_section2 p{
+        height: 150px;
+    }
+}
+
+
+/* ******************** Fim Media queries  *********************** */

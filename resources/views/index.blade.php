@@ -27,7 +27,7 @@
             
             <div class="item active image_section1 " style="background: url(../images/banner_index.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover;   background-size: cover;">
                 
-                <div class="text_section1_rotate">
+                <div class="text_section1_rotate hidden-xs hidden-sm">
                     <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
                 </div>
                 
@@ -45,7 +45,7 @@
 
             <div class="item image_section1 " style="background: url(../images/banner_teste1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover;   background-size: cover;">
                 
-                <div class="text_section1_rotate">
+                <div class="text_section1_rotate hidden-xs hidden-sm">
                     <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
                 </div>
 
@@ -63,7 +63,7 @@
 
             <div class="item image_section1 " style="background: url(../images/banner_teste2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover;   background-size: cover;">
                 
-                <div class="text_section1_rotate">
+                <div class="text_section1_rotate hidden-xs hidden-sm">
                     <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
                 </div>
 
@@ -81,7 +81,7 @@
 
             <div class="item image_section1 " style="background: url(../images/banner_teste3.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover;   background-size: cover;">
                 
-                <div class="text_section1_rotate">
+                <div class="text_section1_rotate hidden-xs hidden-sm">
                     <h4>FUELS AND OIL DERIVATES / BIOFUELS / CHEMICAL / AGRICULTURAL</h4>
                 </div>
 
@@ -120,15 +120,16 @@
         <div class="row">
             
             <div class="col-md-4">
-
-                <div class="image_section2 image_1_section2">
-                    
-                    <div class="text_section2">
-                        <img src="{{asset('images/barra.png')}}" /> <h3>WHO WE ARE</h3>
-                    </div>
+            
+                <div class="image_section2" style="background: url(../images/who_we_are_index.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+                
+                
+                <div class="text_section2">
+                    <img src="{{asset('images/barra.png')}}" /> <h3>WHO WE ARE</h3>
+                </div>
 
                 </div>
-                
+             
                 <!--<img src="{{asset('images/who_we_are_index.jpg')}}" class="img-responsive"/>-->
                 <p>
                     BWI is an independent petrochemicals,
@@ -136,12 +137,14 @@
                     its roots deep in Brazil, while stringly
                     connected to global markets
                 </p> 
-                <span class="button_span"><button>/ VIEW SECTION</button></span>
+                
+                <a href="{{route('who_we_are')}}" class="button_span"><span class="span_inclinado">/ VIEW SECTION</span></a>
+                
             </div>
             
             <div class="col-md-4">
 
-                <div class="image_section2 image_2_section2"s>
+                <div class="image_section2 " style=" background: url(../images/background_index.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
                     
                     <div class="text_section2">
                         <img src="{{asset('images/barra.png')}}" /> <h3>BACKGROUND</h3>
@@ -155,12 +158,12 @@
                     the 50 million m³ per year level and for 
                     gasoline floating around 30 million m³
                 </p>
-                <span class="button_span"><button>/ VIEW SECTION</button></span>
+                <a href="{{route('background')}}" class="button_span"><span class="span_inclinado">/ VIEW SECTION</span></a>
             </div>
             
             <div class="col-md-4">
 
-                <div class="image_section2 image_3_section2"s>
+                <div class="image_section2" style=" background: url(../images/our_values_index.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
                     
                     <div class="text_section2">
                         <img src="{{asset('images/barra.png')}}" /> <h3>OUR VALUES</h3>
@@ -174,7 +177,7 @@
                     all activities of our business, always
                     focused in bringing true value...
                 </p>
-                <span class="button_span"><button>/ VIEW SECTION</button></span>
+                <a href="{{route('our_values')}}" class="button_span"><span class="span_inclinado">/ VIEW SECTION</span></a>
             </div>
 
         </div>
